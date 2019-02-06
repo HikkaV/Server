@@ -17,14 +17,11 @@ class Server(object):
     logger = logging.getLogger("Server.Server")
     i = 0
 
-    # def random_name(self):
-    #     name = random.randint(0, 500) * random.randint(-200, 50)
-    #     return name
 
     def __init__(self, host, port):
         self.datagen = ImageDataGenerator(rescale=1. / 255)
         self.test_generator = self.datagen.flow_from_directory(
-            directory='/home/hikkav/PycharmProjects/ServerWithNN',
+            directory=Settings.path_for_predict,
             target_size=(125, 125),
             color_mode="rgb",
             batch_size=1,
