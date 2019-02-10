@@ -1,7 +1,7 @@
 from threading import Thread
 import logging
 from Server import Server
-
+from Settings import *
 if __name__ == '__main__':
     logger = logging.getLogger("Server")
     logger.setLevel(logging.INFO)
@@ -9,8 +9,8 @@ if __name__ == '__main__':
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(threadName)s - %(message)s')
     fh.setFormatter(formatter)
     logger.addHandler(fh)
-    host = ''
-    port = 8889
+    host = host_
+    port = port_
     server = Server(host,port)
     logger.info('The program started')
     logger.info('Waiting for connection')

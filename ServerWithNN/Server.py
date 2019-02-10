@@ -32,21 +32,34 @@ class Server(object):
         self.logger = logging.getLogger("Server.Server.add")
 
     def date_name(self):
+        """
+        makes a new name for a pic based on current date
+        :return:
+        """
         return ":" + str(self.now.year) + ":" + str(self.now.month) + ":" + str(self.now.day) + ":" + str(
-            self.now.hour) + ":" + ":" + str(self.now.minute)
+            self.now.hour) + ":" + str(self.now.minute)
 
     def init_label_dict(self):
+        """
+
+        loads dict with labels for prediction
+        """
         json_data = open(Settings.path_to_labels).read()
         labels = json.loads(json_data)
         self.logger.info("Loading dict with labels for classes")
         return labels
 
     def save_locally(self, name):
+        """
+        saves img to folder named pics
+        :param name: the name of a saved img
+
+        """
         shutil.copyfile(self.abs_name, Settings.path_to_save_imgs + name)
         self.logger.info("Saving the img locally")
 
     def accept_incoming_connections(self):
-        """Sets up handling for incoming clients."""
+        """Sets up handling for incoming clients. """
         while True:
             client, client_address = self.server_socket.accept()
             self.logger.info("%s:%s has connected." % client_address)
@@ -55,7 +68,13 @@ class Server(object):
             Thread(target=self.handle_client, args=(client,)).start()
 
     def handle_client(self, client):  # Takes client socket as argument.
-        """Handles a single client connection."""
+        """
+        Handles a single client connection.
+        the func loads img from client using func load_img, then it sends a prediction
+        about it , makes the copy of an img to the folder named pics and deletes it from the folder
+        named ServerWithNN , so that the user can send another img and got a prediction exactly related to it
+
+        """
 
         while True:
             command = client.recv(self.buffer_size).decode("utf8")
@@ -67,6 +86,12 @@ class Server(object):
                 break
 
     def quit(self, command, client):
+        """
+        the func deletes the client from the server if the command equals  'quit'
+        :param command: the command sent by a client
+        :param client: the particular client
+
+        """
         flag = False
         if command == 'quit':
             self.logger.info('The command is "quit" ')
@@ -85,7 +110,12 @@ class Server(object):
         return flag
 
     def load_img(self, command, client):
+        """
+        loads an img to the server if the command equals 'predict'
+       :param command: the command sent by a client
+       :param client: the particular client
 
+        """
         if command == 'predict':
             self.logger.info('The command is "predict"')
             data = client.recv(self.buffer_size)
@@ -106,6 +136,12 @@ class Server(object):
             self.save_locally(name)
 
     def get_prediction(self, client, command):
+        """
+        gets a prediction for an img to the server if the command equals 'predict'
+       :param command: the command sent by a client
+       :param client: the particular client
+
+        """
         if command == 'predict':
             if os.path.exists(self.abs_name):
                 self.logger.info('Wait for prediction')
