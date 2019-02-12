@@ -26,7 +26,7 @@ class Server(object):
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.server_socket.bind((host, port))
-        self.server_socket.listen(max_users)
+        self.server_socket.listen(settings.max_users)
         self.model = self.load_model()
         self.labels = self.init_label_dict()
         self.logger = logging.getLogger("Server.Server.add")
