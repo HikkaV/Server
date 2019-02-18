@@ -10,7 +10,8 @@ import tensorflow as tf
 import logging
 import datetime
 import shutil
-
+import sys
+import time
 
 class Server(object):
     clients = {}
@@ -77,33 +78,30 @@ class Server(object):
         """
 
         while True:
+
             command = client.recv(self.buffer_size).decode("utf8")
             self.logger.info('The command was received')
             self.load_img(command, client)
             self.get_prediction(client, command)
-            flag = self.quit(command, client)
-            if flag:
+
+            if self.quit(client):
                 break
 
-    def quit(self, command, client):
+    def quit(self, client):
         """
         the func deletes the client from the server if the command equals  'quit'
-        :param command: the command sent by a client
         :param client: the particular client
 
         """
-        flag = False
-        if command == 'quit':
-            self.logger.info('The command is "quit" ')
-            client.send(bytes("Sayonara^^", "utf8"))
-            self.logger.info('Sending the farewell message to client')
-            flag = True
-        if flag:
-            try:
-                del self.clients[client]
-            except KeyError:
-                self.logger.info('The client %s:%s ' % self.addresses[client] + ' has left the server ')
-                print('The client %s:%s ' % self.addresses[client] + ' has left the server ')
+
+        flag = True
+        self.logger.info('Quitting ')
+
+        try:
+            del self.clients[client]
+        except KeyError:
+            self.logger.info('The client %s:%s ' % self.addresses[client] + ' has left the server ')
+            print('The client %s:%s ' % self.addresses[client] + ' has left the server ')
             self.logger.info('Deleting the client from the list of clients')
             client.close()
 
@@ -117,22 +115,35 @@ class Server(object):
 
         """
         if command == 'predict':
-            self.logger.info('The command is "predict"')
+            self.logger.info('Ready to load an img')
             data = client.recv(self.buffer_size)
+            print(sys.getsizeof(data))
             if not data:
                 self.logger.error('The trouble occurred while writing the last pieces of data into file')
                 client.send(bytes("The trouble occurred, please resend the pic", "utf8"))
                 raise Exception
-            self.logger.info(
-                'The program obtained all the data :' + str(data) + ' bytes')
+
             name = self.basename % self.date_name()
             self.abs_name = settings.path_to_pic + name
             myfile = open(self.abs_name, 'wb')
             myfile.write(data)
+            while True:
+                time.sleep(3)
+                try:
+                    np_image = Image.open(self.abs_name)
+                    np_image = np.array(np_image).astype('float32') / 255
+                    break
+                except Exception as e:
+                    data = client.recv(self.buffer_size)
+                    myfile.write(data)
+                    print(e)
+
+            self.logger.info(
+                'The program obtained all the data :' + str(sys.getsizeof(data)) + ' bytes')
             self.logger.info('The program saved data to ' + name)
             myfile.close()
             self.logger.info('The image was saved')
-            client.send(bytes("Got image", "utf8"))
+            client.send(bytes("Got ", "utf8"))
             self.save_locally(name)
 
     def get_prediction(self, client, command):
@@ -142,10 +153,9 @@ class Server(object):
        :param client: the particular client
 
         """
+
         if command == 'predict':
             if os.path.exists(self.abs_name):
-                self.logger.info('Wait for prediction')
-                client.send(bytes("Wait for prediction..", "utf8"))
                 msg = self.predict(self.abs_name)
                 self.logger.info('The prediction for ' + self.abs_name + ' :' + msg)
                 client.send(bytes(msg, "utf8"))
@@ -178,7 +188,7 @@ class Server(object):
             if os.path.exists(path):
                 np_image = Image.open(path)
                 np_image = np.array(np_image).astype('float32') / 255
-                np_image = transform.resize(np_image, (125, 125, 3))
+                np_image = transform.resize(np_image, (100, 100, 3))
                 np_image = np.expand_dims(np_image, axis=0)
                 tmp = self.model.predict(np_image)
                 prediction = np.argmax(tmp, axis=1)
