@@ -128,7 +128,7 @@ class Server(object):
             myfile = open(self.abs_name, 'wb')
             myfile.write(data)
             while True:
-                time.sleep(3)
+                time.sleep(5)
                 try:
                     np_image = Image.open(self.abs_name)
                     np_image = np.array(np_image).astype('float32') / 255
