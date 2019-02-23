@@ -50,13 +50,13 @@ class Server(object):
         self.logger.info("Loading dict with labels for classes")
         return labels
 
-    def save_locally(self, name):
+    def save_locally(self, name,abs_name):
         """
         saves img to folder named pics
         :param name: the name of a saved img
 
         """
-        shutil.copyfile(self.abs_name, settings.path_to_save_imgs + name)
+        shutil.copyfile(abs_name, settings.path_to_save_imgs + name)
         self.logger.info("Saving the img locally")
 
     def accept_incoming_connections(self):
@@ -66,7 +66,9 @@ class Server(object):
             self.logger.info("%s:%s has connected." % client_address)
             print("%s:%s has connected." % client_address)
             self.addresses[client] = client_address
-            Thread(target=self.handle_client, args=(client,)).start()
+            global thread
+            thread=Thread(target=self.handle_client, args=(client,))
+            thread.start()
 
     def handle_client(self, client):  # Takes client socket as argument.
         """
@@ -78,14 +80,17 @@ class Server(object):
         """
 
         while True:
-
+            
             command = client.recv(self.buffer_size).decode("utf8")
             self.logger.info('The command was received')
-            self.load_img(command, client)
-            self.get_prediction(client, command)
+            
+            abs_name=self.load_img(command, client)
+            self.get_prediction(client, command, abs_name)
 
             if self.quit(client):
                 break
+                
+
 
     def quit(self, client):
         """
@@ -115,6 +120,7 @@ class Server(object):
 
         """
         if command == 'predict':
+            time.sleep(1) 
             self.logger.info('Ready to load an img')
             data = client.recv(self.buffer_size)
             print(sys.getsizeof(data))
@@ -123,30 +129,38 @@ class Server(object):
                 client.send(bytes("The trouble occurred, please resend the pic", "utf8"))
                 raise Exception
 
-            name = self.basename % self.date_name()
-            self.abs_name = settings.path_to_pic + name
-            myfile = open(self.abs_name, 'wb')
+            name = self.basename % self.date_name()+'_'+str(self.addresses[client])
+            abs_name = settings.path_to_pic + name
+            myfile = open(abs_name, 'wb')
             myfile.write(data)
-            while True:
-                time.sleep(5)
+            flag=True
+            while flag:
+                time.sleep(3)          
                 try:
-                    np_image = Image.open(self.abs_name)
-                    np_image = np.array(np_image).astype('float32') / 255
-                    break
+                   img =np.array(Image.open(abs_name)).astype('float32') / 255
+                   self.logger.info('that"s works!')
+                   flag = False
+                   self.logger.info('leaving from infiniti loop')
                 except Exception as e:
-                    data = client.recv(self.buffer_size)
-                    myfile.write(data)
-                    print(e)
-
+                   
+                   data = client.recv(self.buffer_size)
+                   print(sys.getsizeof(data))
+                   self.logger.info('waiting for additional data')
+                   myfile.write(data)
+                   print(e)
+                   self.logger.info('going to the start')
+                   if not data:
+                       break
             self.logger.info(
                 'The program obtained all the data :' + str(sys.getsizeof(data)) + ' bytes')
             self.logger.info('The program saved data to ' + name)
             myfile.close()
             self.logger.info('The image was saved')
             client.send(bytes("Got ", "utf8"))
-            self.save_locally(name)
+            self.save_locally(name,abs_name)
+            return abs_name
 
-    def get_prediction(self, client, command):
+    def get_prediction(self, client, command,abs_name):
         """
         gets a prediction for an img to the server if the command equals 'predict'
        :param command: the command sent by a client
@@ -155,12 +169,13 @@ class Server(object):
         """
 
         if command == 'predict':
-            if os.path.exists(self.abs_name):
-                msg = self.predict(self.abs_name)
-                self.logger.info('The prediction for ' + self.abs_name + ' :' + msg)
+            time.sleep(2)
+            if os.path.exists(abs_name):
+                msg = self.predict(abs_name)
+                self.logger.info('The prediction for ' + abs_name + ' :' + msg)
                 client.send(bytes(msg, "utf8"))
                 self.logger.info('Sending prediction to client')
-                os.remove(self.abs_name)
+                os.remove(abs_name)
             else:
                 self.logger.error('The trouble occurred')
                 client.send(bytes('The trouble occurred', 'utf8'))
