@@ -1,0 +1,283 @@
+2019-09-05 23:03:33,762 - Server - INFO - MainThread - The program started
+2019-09-05 23:03:33,763 - Server - INFO - MainThread - Waiting for connection
+2019-09-05 23:03:40,333 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42646 has connected.
+2019-09-05 23:03:40,336 - Server.Server.add - INFO - Thread-2 - The command was received
+2019-09-05 23:03:41,337 - Server.Server.add - INFO - Thread-2 - Ready to load an img
+2019-09-05 23:03:44,348 - Server.Server.add - INFO - Thread-2 - that"s works!
+2019-09-05 23:03:44,348 - Server.Server.add - INFO - Thread-2 - leaving from infinite loop
+2019-09-05 23:03:44,348 - Server.Server.add - INFO - Thread-2 - The program obtained all the data :24999 bytes
+2019-09-05 23:03:44,348 - Server.Server.add - INFO - Thread-2 - The program saved data to :2019:9:5:23:3_('192.168.1.107', 42646).png
+2019-09-05 23:03:44,348 - Server.Server.add - INFO - Thread-2 - The image was saved
+2019-09-05 23:03:46,350 - Server.Server.add - INFO - Thread-2 - Making a prediction
+2019-09-05 23:03:48,206 - Server.Server.add - INFO - Thread-2 - Saving the img locally
+2019-09-05 23:03:48,998 - Server.Server.add - INFO - Thread-2 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:3_('192.168.1.107', 42646).png :Sad
+2019-09-05 23:03:49,000 - Server.Server.add - INFO - Thread-2 - Sending prediction to client
+2019-09-05 23:03:49,000 - Server.Server.add - INFO - Thread-2 - Quitting 
+2019-09-05 23:03:49,000 - Server.Server.add - INFO - Thread-2 - The client 192.168.1.107:42646  has left the server 
+2019-09-05 23:03:49,000 - Server.Server.add - INFO - Thread-2 - Deleting the client from the list of clients
+2019-09-05 23:05:15,912 - Server - INFO - MainThread - The program started
+2019-09-05 23:05:15,912 - Server - INFO - MainThread - Waiting for connection
+2019-09-05 23:05:26,933 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42648 has connected.
+2019-09-05 23:05:26,936 - Server.Server.add - INFO - Thread-2 - The command was received
+2019-09-05 23:05:27,938 - Server.Server.add - INFO - Thread-2 - Ready to load an img
+2019-09-05 23:05:30,948 - Server.Server.add - INFO - Thread-2 - that"s works!
+2019-09-05 23:05:30,948 - Server.Server.add - INFO - Thread-2 - leaving from infinite loop
+2019-09-05 23:05:30,948 - Server.Server.add - INFO - Thread-2 - The program obtained all the data :25436 bytes
+2019-09-05 23:05:30,949 - Server.Server.add - INFO - Thread-2 - The program saved data to :2019:9:5:23:5_('192.168.1.107', 42648).png
+2019-09-05 23:05:30,949 - Server.Server.add - INFO - Thread-2 - The image was saved
+2019-09-05 23:05:32,953 - Server.Server.add - INFO - Thread-2 - Making a prediction
+2019-09-05 23:05:34,802 - Server.Server.add - INFO - Thread-2 - Saving the img locally
+2019-09-05 23:05:35,592 - Server.Server.add - INFO - Thread-2 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:5_('192.168.1.107', 42648).png :Neutral
+2019-09-05 23:05:35,595 - Server.Server.add - INFO - Thread-2 - Sending prediction to client
+2019-09-05 23:05:35,595 - Server.Server.add - INFO - Thread-2 - Quitting 
+2019-09-05 23:05:35,595 - Server.Server.add - INFO - Thread-2 - The client 192.168.1.107:42648  has left the server 
+2019-09-05 23:05:35,595 - Server.Server.add - INFO - Thread-2 - Deleting the client from the list of clients
+2019-09-05 23:05:43,116 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42650 has connected.
+2019-09-05 23:05:43,119 - Server.Server.add - INFO - Thread-3 - The command was received
+2019-09-05 23:05:44,120 - Server.Server.add - INFO - Thread-3 - Ready to load an img
+2019-09-05 23:05:47,125 - Server.Server.add - INFO - Thread-3 - that"s works!
+2019-09-05 23:05:47,126 - Server.Server.add - INFO - Thread-3 - leaving from infinite loop
+2019-09-05 23:05:47,126 - Server.Server.add - INFO - Thread-3 - The program obtained all the data :26224 bytes
+2019-09-05 23:05:47,126 - Server.Server.add - INFO - Thread-3 - The program saved data to :2019:9:5:23:5_('192.168.1.107', 42650).png
+2019-09-05 23:05:47,126 - Server.Server.add - INFO - Thread-3 - The image was saved
+2019-09-05 23:05:49,131 - Server.Server.add - INFO - Thread-3 - Making a prediction
+2019-09-05 23:05:49,393 - Server.Server.add - INFO - Thread-3 - Saving the img locally
+2019-09-05 23:05:49,402 - Server.Server.add - INFO - Thread-3 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:5_('192.168.1.107', 42650).png :Surprise
+2019-09-05 23:05:49,405 - Server.Server.add - INFO - Thread-3 - Sending prediction to client
+2019-09-05 23:05:49,405 - Server.Server.add - INFO - Thread-3 - Quitting 
+2019-09-05 23:05:49,405 - Server.Server.add - INFO - Thread-3 - The client 192.168.1.107:42650  has left the server 
+2019-09-05 23:05:49,405 - Server.Server.add - INFO - Thread-3 - Deleting the client from the list of clients
+2019-09-05 23:08:20,450 - Server - INFO - MainThread - The program started
+2019-09-05 23:08:20,450 - Server - INFO - MainThread - Waiting for connection
+2019-09-05 23:09:08,212 - Server - INFO - MainThread - The program started
+2019-09-05 23:09:08,212 - Server - INFO - MainThread - Waiting for connection
+2019-09-05 23:09:13,137 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42666 has connected.
+2019-09-05 23:09:13,138 - Server.Server.add - INFO - Thread-2 - The command was received
+2019-09-05 23:09:14,140 - Server.Server.add - INFO - Thread-2 - Ready to load an img
+2019-09-05 23:09:17,151 - Server.Server.add - INFO - Thread-2 - that"s works!
+2019-09-05 23:09:17,151 - Server.Server.add - INFO - Thread-2 - leaving from infinite loop
+2019-09-05 23:09:17,151 - Server.Server.add - INFO - Thread-2 - The program obtained all the data :25115 bytes
+2019-09-05 23:09:17,151 - Server.Server.add - INFO - Thread-2 - The program saved data to :2019:9:5:23:8_('192.168.1.107', 42666).png
+2019-09-05 23:09:17,151 - Server.Server.add - INFO - Thread-2 - The image was saved
+2019-09-05 23:09:19,156 - Server.Server.add - INFO - Thread-2 - Making a prediction
+2019-09-05 23:09:20,981 - Server.Server.add - INFO - Thread-2 - Saving the img locally
+2019-09-05 23:09:21,767 - Server.Server.add - INFO - Thread-2 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:8_('192.168.1.107', 42666).png :Surprise
+2019-09-05 23:09:21,770 - Server.Server.add - INFO - Thread-2 - Sending prediction to client
+2019-09-05 23:09:21,770 - Server.Server.add - INFO - Thread-2 - Quitting 
+2019-09-05 23:09:21,770 - Server.Server.add - INFO - Thread-2 - The client 192.168.1.107:42666  has left the server 
+2019-09-05 23:09:21,770 - Server.Server.add - INFO - Thread-2 - Deleting the client from the list of clients
+2019-09-05 23:09:37,404 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42668 has connected.
+2019-09-05 23:09:37,407 - Server.Server.add - INFO - Thread-3 - The command was received
+2019-09-05 23:09:38,408 - Server.Server.add - INFO - Thread-3 - Ready to load an img
+2019-09-05 23:09:41,413 - Server.Server.add - INFO - Thread-3 - that"s works!
+2019-09-05 23:09:41,413 - Server.Server.add - INFO - Thread-3 - leaving from infinite loop
+2019-09-05 23:09:41,414 - Server.Server.add - INFO - Thread-3 - The program obtained all the data :25317 bytes
+2019-09-05 23:09:41,414 - Server.Server.add - INFO - Thread-3 - The program saved data to :2019:9:5:23:8_('192.168.1.107', 42668).png
+2019-09-05 23:09:41,414 - Server.Server.add - INFO - Thread-3 - The image was saved
+2019-09-05 23:09:43,418 - Server.Server.add - INFO - Thread-3 - Making a prediction
+2019-09-05 23:09:43,686 - Server.Server.add - INFO - Thread-3 - Saving the img locally
+2019-09-05 23:09:43,695 - Server.Server.add - INFO - Thread-3 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:8_('192.168.1.107', 42668).png :Happy
+2019-09-05 23:09:43,698 - Server.Server.add - INFO - Thread-3 - Sending prediction to client
+2019-09-05 23:09:43,698 - Server.Server.add - INFO - Thread-3 - Quitting 
+2019-09-05 23:09:43,698 - Server.Server.add - INFO - Thread-3 - The client 192.168.1.107:42668  has left the server 
+2019-09-05 23:09:43,698 - Server.Server.add - INFO - Thread-3 - Deleting the client from the list of clients
+2019-09-05 23:10:13,959 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42670 has connected.
+2019-09-05 23:10:13,962 - Server.Server.add - INFO - Thread-4 - The command was received
+2019-09-05 23:10:14,963 - Server.Server.add - INFO - Thread-4 - Ready to load an img
+2019-09-05 23:10:17,969 - Server.Server.add - INFO - Thread-4 - that"s works!
+2019-09-05 23:10:17,969 - Server.Server.add - INFO - Thread-4 - leaving from infinite loop
+2019-09-05 23:10:17,969 - Server.Server.add - INFO - Thread-4 - The program obtained all the data :25437 bytes
+2019-09-05 23:10:17,969 - Server.Server.add - INFO - Thread-4 - The program saved data to :2019:9:5:23:8_('192.168.1.107', 42670).png
+2019-09-05 23:10:17,969 - Server.Server.add - INFO - Thread-4 - The image was saved
+2019-09-05 23:10:19,974 - Server.Server.add - INFO - Thread-4 - Making a prediction
+2019-09-05 23:10:19,997 - Server.Server.add - INFO - Thread-4 - Saving the img locally
+2019-09-05 23:10:20,008 - Server.Server.add - INFO - Thread-4 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:8_('192.168.1.107', 42670).png :Ahegao
+2019-09-05 23:10:20,010 - Server.Server.add - INFO - Thread-4 - Sending prediction to client
+2019-09-05 23:10:20,010 - Server.Server.add - INFO - Thread-4 - Quitting 
+2019-09-05 23:10:20,010 - Server.Server.add - INFO - Thread-4 - The client 192.168.1.107:42670  has left the server 
+2019-09-05 23:10:20,011 - Server.Server.add - INFO - Thread-4 - Deleting the client from the list of clients
+2019-09-05 23:10:32,084 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42672 has connected.
+2019-09-05 23:10:32,088 - Server.Server.add - INFO - Thread-5 - The command was received
+2019-09-05 23:10:33,089 - Server.Server.add - INFO - Thread-5 - Ready to load an img
+2019-09-05 23:10:36,094 - Server.Server.add - INFO - Thread-5 - that"s works!
+2019-09-05 23:10:36,094 - Server.Server.add - INFO - Thread-5 - leaving from infinite loop
+2019-09-05 23:10:36,094 - Server.Server.add - INFO - Thread-5 - The program obtained all the data :26311 bytes
+2019-09-05 23:10:36,095 - Server.Server.add - INFO - Thread-5 - The program saved data to :2019:9:5:23:8_('192.168.1.107', 42672).png
+2019-09-05 23:10:36,095 - Server.Server.add - INFO - Thread-5 - The image was saved
+2019-09-05 23:10:38,099 - Server.Server.add - INFO - Thread-5 - Making a prediction
+2019-09-05 23:10:38,120 - Server.Server.add - INFO - Thread-5 - Saving the img locally
+2019-09-05 23:10:38,129 - Server.Server.add - INFO - Thread-5 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:8_('192.168.1.107', 42672).png :Surprise
+2019-09-05 23:10:38,131 - Server.Server.add - INFO - Thread-5 - Sending prediction to client
+2019-09-05 23:10:38,131 - Server.Server.add - INFO - Thread-5 - Quitting 
+2019-09-05 23:10:38,131 - Server.Server.add - INFO - Thread-5 - The client 192.168.1.107:42672  has left the server 
+2019-09-05 23:10:38,132 - Server.Server.add - INFO - Thread-5 - Deleting the client from the list of clients
+2019-09-05 23:10:51,449 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42674 has connected.
+2019-09-05 23:10:51,465 - Server.Server.add - INFO - Thread-6 - The command was received
+2019-09-05 23:10:52,466 - Server.Server.add - INFO - Thread-6 - Ready to load an img
+2019-09-05 23:10:55,471 - Server.Server.add - INFO - Thread-6 - that"s works!
+2019-09-05 23:10:55,472 - Server.Server.add - INFO - Thread-6 - leaving from infinite loop
+2019-09-05 23:10:55,472 - Server.Server.add - INFO - Thread-6 - The program obtained all the data :24632 bytes
+2019-09-05 23:10:55,472 - Server.Server.add - INFO - Thread-6 - The program saved data to :2019:9:5:23:8_('192.168.1.107', 42674).png
+2019-09-05 23:10:55,472 - Server.Server.add - INFO - Thread-6 - The image was saved
+2019-09-05 23:10:57,477 - Server.Server.add - INFO - Thread-6 - Making a prediction
+2019-09-05 23:10:57,496 - Server.Server.add - INFO - Thread-6 - Saving the img locally
+2019-09-05 23:10:57,506 - Server.Server.add - INFO - Thread-6 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:8_('192.168.1.107', 42674).png :Neutral
+2019-09-05 23:10:57,508 - Server.Server.add - INFO - Thread-6 - Sending prediction to client
+2019-09-05 23:10:57,509 - Server.Server.add - INFO - Thread-6 - Quitting 
+2019-09-05 23:10:57,509 - Server.Server.add - INFO - Thread-6 - The client 192.168.1.107:42674  has left the server 
+2019-09-05 23:10:57,509 - Server.Server.add - INFO - Thread-6 - Deleting the client from the list of clients
+2019-09-05 23:11:05,778 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42676 has connected.
+2019-09-05 23:11:05,790 - Server.Server.add - INFO - Thread-7 - The command was received
+2019-09-05 23:11:06,791 - Server.Server.add - INFO - Thread-7 - Ready to load an img
+2019-09-05 23:11:09,796 - Server.Server.add - INFO - Thread-7 - that"s works!
+2019-09-05 23:11:09,797 - Server.Server.add - INFO - Thread-7 - leaving from infinite loop
+2019-09-05 23:11:09,797 - Server.Server.add - INFO - Thread-7 - The program obtained all the data :27511 bytes
+2019-09-05 23:11:09,797 - Server.Server.add - INFO - Thread-7 - The program saved data to :2019:9:5:23:8_('192.168.1.107', 42676).png
+2019-09-05 23:11:09,797 - Server.Server.add - INFO - Thread-7 - The image was saved
+2019-09-05 23:11:11,802 - Server.Server.add - INFO - Thread-7 - Making a prediction
+2019-09-05 23:11:11,822 - Server.Server.add - INFO - Thread-7 - Saving the img locally
+2019-09-05 23:11:11,831 - Server.Server.add - INFO - Thread-7 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:8_('192.168.1.107', 42676).png :Happy
+2019-09-05 23:11:11,831 - Server.Server.add - INFO - Thread-7 - Sending prediction to client
+2019-09-05 23:11:11,831 - Server.Server.add - INFO - Thread-7 - Quitting 
+2019-09-05 23:11:11,832 - Server.Server.add - INFO - Thread-7 - The client 192.168.1.107:42676  has left the server 
+2019-09-05 23:11:11,832 - Server.Server.add - INFO - Thread-7 - Deleting the client from the list of clients
+2019-09-05 23:14:49,632 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42678 has connected.
+2019-09-05 23:14:49,636 - Server.Server.add - INFO - Thread-8 - The command was received
+2019-09-05 23:14:50,637 - Server.Server.add - INFO - Thread-8 - Ready to load an img
+2019-09-05 23:14:53,642 - Server.Server.add - INFO - Thread-8 - that"s works!
+2019-09-05 23:14:53,643 - Server.Server.add - INFO - Thread-8 - leaving from infinite loop
+2019-09-05 23:14:53,643 - Server.Server.add - INFO - Thread-8 - The program obtained all the data :21539 bytes
+2019-09-05 23:14:53,643 - Server.Server.add - INFO - Thread-8 - The program saved data to :2019:9:5:23:8_('192.168.1.107', 42678).png
+2019-09-05 23:14:53,643 - Server.Server.add - INFO - Thread-8 - The image was saved
+2019-09-05 23:14:55,648 - Server.Server.add - INFO - Thread-8 - Making a prediction
+2019-09-05 23:14:55,670 - Server.Server.add - INFO - Thread-8 - Saving the img locally
+2019-09-05 23:14:55,680 - Server.Server.add - INFO - Thread-8 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:8_('192.168.1.107', 42678).png :Neutral
+2019-09-05 23:14:55,683 - Server.Server.add - INFO - Thread-8 - Sending prediction to client
+2019-09-05 23:14:55,683 - Server.Server.add - INFO - Thread-8 - Quitting 
+2019-09-05 23:14:55,683 - Server.Server.add - INFO - Thread-8 - The client 192.168.1.107:42678  has left the server 
+2019-09-05 23:14:55,683 - Server.Server.add - INFO - Thread-8 - Deleting the client from the list of clients
+2019-09-05 23:15:04,393 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42680 has connected.
+2019-09-05 23:15:04,397 - Server.Server.add - INFO - Thread-9 - The command was received
+2019-09-05 23:15:05,398 - Server.Server.add - INFO - Thread-9 - Ready to load an img
+2019-09-05 23:15:08,402 - Server.Server.add - INFO - Thread-9 - that"s works!
+2019-09-05 23:15:08,402 - Server.Server.add - INFO - Thread-9 - leaving from infinite loop
+2019-09-05 23:15:08,402 - Server.Server.add - INFO - Thread-9 - The program obtained all the data :25110 bytes
+2019-09-05 23:15:08,402 - Server.Server.add - INFO - Thread-9 - The program saved data to :2019:9:5:23:8_('192.168.1.107', 42680).png
+2019-09-05 23:15:08,402 - Server.Server.add - INFO - Thread-9 - The image was saved
+2019-09-05 23:15:10,407 - Server.Server.add - INFO - Thread-9 - Making a prediction
+2019-09-05 23:15:10,428 - Server.Server.add - INFO - Thread-9 - Saving the img locally
+2019-09-05 23:15:10,437 - Server.Server.add - INFO - Thread-9 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:8_('192.168.1.107', 42680).png :Happy
+2019-09-05 23:15:10,440 - Server.Server.add - INFO - Thread-9 - Sending prediction to client
+2019-09-05 23:15:10,440 - Server.Server.add - INFO - Thread-9 - Quitting 
+2019-09-05 23:15:10,440 - Server.Server.add - INFO - Thread-9 - The client 192.168.1.107:42680  has left the server 
+2019-09-05 23:15:10,440 - Server.Server.add - INFO - Thread-9 - Deleting the client from the list of clients
+2019-09-05 23:36:46,170 - Server - INFO - MainThread - The program started
+2019-09-05 23:36:46,170 - Server - INFO - MainThread - Waiting for connection
+2019-09-05 23:36:58,990 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42812 has connected.
+2019-09-05 23:36:59,000 - Server.Server.add - INFO - Thread-2 - The command was received
+2019-09-05 23:37:00,001 - Server.Server.add - INFO - Thread-2 - Ready to load an img
+2019-09-05 23:38:13,104 - Server - INFO - MainThread - The program started
+2019-09-05 23:38:13,105 - Server - INFO - MainThread - Waiting for connection
+2019-09-05 23:38:41,805 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42840 has connected.
+2019-09-05 23:38:41,817 - Server.Server.add - INFO - Thread-2 - The command was received
+2019-09-05 23:38:42,819 - Server.Server.add - INFO - Thread-2 - Ready to load an img
+2019-09-05 23:38:45,892 - Server.Server.add - INFO - Thread-2 - that"s works!
+2019-09-05 23:38:45,892 - Server.Server.add - INFO - Thread-2 - leaving from infinite loop
+2019-09-05 23:38:45,892 - Server.Server.add - INFO - Thread-2 - The program obtained all the data :23214 bytes
+2019-09-05 23:38:45,892 - Server.Server.add - INFO - Thread-2 - The program saved data to :2019:9:5:23:38_('192.168.1.107', 42840)42.png
+2019-09-05 23:38:45,892 - Server.Server.add - INFO - Thread-2 - The image was saved
+2019-09-05 23:38:47,897 - Server.Server.add - INFO - Thread-2 - Making a prediction
+2019-09-05 23:38:50,276 - Server.Server.add - INFO - Thread-2 - Saving the img locally
+2019-09-05 23:38:51,320 - Server.Server.add - INFO - Thread-2 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:38_('192.168.1.107', 42840)42.png :Happy
+2019-09-05 23:38:51,322 - Server.Server.add - INFO - Thread-2 - Sending prediction to client
+2019-09-05 23:38:51,322 - Server.Server.add - INFO - Thread-2 - Quitting 
+2019-09-05 23:38:51,322 - Server.Server.add - INFO - Thread-2 - The client 192.168.1.107:42840  has left the server 
+2019-09-05 23:38:51,322 - Server.Server.add - INFO - Thread-2 - Deleting the client from the list of clients
+2019-09-05 23:39:31,461 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42842 has connected.
+2019-09-05 23:39:31,474 - Server.Server.add - INFO - Thread-3 - The command was received
+2019-09-05 23:39:32,476 - Server.Server.add - INFO - Thread-3 - Ready to load an img
+2019-09-05 23:39:35,481 - Server.Server.add - INFO - Thread-3 - that"s works!
+2019-09-05 23:39:35,481 - Server.Server.add - INFO - Thread-3 - leaving from infinite loop
+2019-09-05 23:39:35,481 - Server.Server.add - INFO - Thread-3 - The program obtained all the data :27310 bytes
+2019-09-05 23:39:35,481 - Server.Server.add - INFO - Thread-3 - The program saved data to :2019:9:5:23:38_('192.168.1.107', 42842)32.png
+2019-09-05 23:39:35,481 - Server.Server.add - INFO - Thread-3 - The image was saved
+2019-09-05 23:39:37,484 - Server.Server.add - INFO - Thread-3 - Making a prediction
+2019-09-05 23:39:37,751 - Server.Server.add - INFO - Thread-3 - Saving the img locally
+2019-09-05 23:39:37,760 - Server.Server.add - INFO - Thread-3 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:38_('192.168.1.107', 42842)32.png :Neutral
+2019-09-05 23:39:37,763 - Server.Server.add - INFO - Thread-3 - Sending prediction to client
+2019-09-05 23:39:37,763 - Server.Server.add - INFO - Thread-3 - Quitting 
+2019-09-05 23:39:37,763 - Server.Server.add - INFO - Thread-3 - The client 192.168.1.107:42842  has left the server 
+2019-09-05 23:39:37,763 - Server.Server.add - INFO - Thread-3 - Deleting the client from the list of clients
+2019-09-05 23:39:53,483 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42846 has connected.
+2019-09-05 23:39:53,484 - Server.Server.add - INFO - Thread-4 - The command was received
+2019-09-05 23:39:54,485 - Server.Server.add - INFO - Thread-4 - Ready to load an img
+2019-09-05 23:39:57,490 - Server.Server.add - INFO - Thread-4 - that"s works!
+2019-09-05 23:39:57,491 - Server.Server.add - INFO - Thread-4 - leaving from infinite loop
+2019-09-05 23:39:57,491 - Server.Server.add - INFO - Thread-4 - The program obtained all the data :27357 bytes
+2019-09-05 23:39:57,491 - Server.Server.add - INFO - Thread-4 - The program saved data to :2019:9:5:23:38_('192.168.1.107', 42846)54.png
+2019-09-05 23:39:57,491 - Server.Server.add - INFO - Thread-4 - The image was saved
+2019-09-05 23:39:59,493 - Server.Server.add - INFO - Thread-4 - Making a prediction
+2019-09-05 23:39:59,517 - Server.Server.add - INFO - Thread-4 - Saving the img locally
+2019-09-05 23:39:59,526 - Server.Server.add - INFO - Thread-4 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:38_('192.168.1.107', 42846)54.png :Neutral
+2019-09-05 23:39:59,526 - Server.Server.add - INFO - Thread-4 - Sending prediction to client
+2019-09-05 23:39:59,526 - Server.Server.add - INFO - Thread-4 - Quitting 
+2019-09-05 23:39:59,526 - Server.Server.add - INFO - Thread-4 - The client 192.168.1.107:42846  has left the server 
+2019-09-05 23:39:59,526 - Server.Server.add - INFO - Thread-4 - Deleting the client from the list of clients
+2019-09-05 23:40:18,668 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42848 has connected.
+2019-09-05 23:41:33,666 - Server - INFO - MainThread - The program started
+2019-09-05 23:41:33,666 - Server - INFO - MainThread - Waiting for connection
+2019-09-05 23:41:49,813 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42854 has connected.
+2019-09-05 23:41:49,816 - Server.Server.add - INFO - Thread-2 - The command was received
+2019-09-05 23:41:50,817 - Server.Server.add - INFO - Thread-2 - Ready to load an img
+2019-09-05 23:41:53,828 - Server.Server.add - INFO - Thread-2 - that"s works!
+2019-09-05 23:41:53,872 - Server.Server.add - INFO - Thread-2 - leaving from infinite loop
+2019-09-05 23:41:53,872 - Server.Server.add - INFO - Thread-2 - The program obtained all the data :23858 bytes
+2019-09-05 23:41:53,872 - Server.Server.add - INFO - Thread-2 - The program saved data to :2019:9:5:23:41_('192.168.1.107', 42854)50.png
+2019-09-05 23:41:53,872 - Server.Server.add - INFO - Thread-2 - The image was saved
+2019-09-05 23:41:55,877 - Server.Server.add - INFO - Thread-2 - Making a prediction
+2019-09-05 23:41:57,733 - Server.Server.add - INFO - Thread-2 - Saving the img locally
+2019-09-05 23:41:58,534 - Server.Server.add - INFO - Thread-2 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:41_('192.168.1.107', 42854)50.png :Sad
+2019-09-05 23:41:58,537 - Server.Server.add - INFO - Thread-2 - Sending prediction to client
+2019-09-05 23:41:58,537 - Server.Server.add - INFO - Thread-2 - Quitting 
+2019-09-05 23:41:58,537 - Server.Server.add - INFO - Thread-2 - The client 192.168.1.107:42854  has left the server 
+2019-09-05 23:41:58,537 - Server.Server.add - INFO - Thread-2 - Deleting the client from the list of clients
+2019-09-05 23:43:26,680 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42880 has connected.
+2019-09-05 23:43:26,682 - Server.Server.add - INFO - Thread-3 - The command was received
+2019-09-05 23:43:27,684 - Server.Server.add - INFO - Thread-3 - Ready to load an img
+2019-09-05 23:43:30,689 - Server.Server.add - INFO - Thread-3 - that"s works!
+2019-09-05 23:43:30,689 - Server.Server.add - INFO - Thread-3 - leaving from infinite loop
+2019-09-05 23:43:30,689 - Server.Server.add - INFO - Thread-3 - The program obtained all the data :24479 bytes
+2019-09-05 23:43:30,689 - Server.Server.add - INFO - Thread-3 - The program saved data to :2019:9:5:23:41_('192.168.1.107', 42880)27.png
+2019-09-05 23:43:30,689 - Server.Server.add - INFO - Thread-3 - The image was saved
+2019-09-05 23:43:32,690 - Server.Server.add - INFO - Thread-3 - Making a prediction
+2019-09-05 23:43:32,948 - Server.Server.add - INFO - Thread-3 - Saving the img locally
+2019-09-05 23:43:32,957 - Server.Server.add - INFO - Thread-3 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:41_('192.168.1.107', 42880)27.png :Happy
+2019-09-05 23:43:32,957 - Server.Server.add - INFO - Thread-3 - Sending prediction to client
+2019-09-05 23:43:32,957 - Server.Server.add - INFO - Thread-3 - Quitting 
+2019-09-05 23:43:32,957 - Server.Server.add - INFO - Thread-3 - The client 192.168.1.107:42880  has left the server 
+2019-09-05 23:43:32,957 - Server.Server.add - INFO - Thread-3 - Deleting the client from the list of clients
+2019-09-05 23:44:36,563 - Server - INFO - MainThread - The program started
+2019-09-05 23:44:36,563 - Server - INFO - MainThread - Waiting for connection
+2019-09-05 23:49:42,613 - Server.Server.add - INFO - Thread-1 - 192.168.1.107:42934 has connected.
+2019-09-05 23:49:42,626 - Server.Server.add - INFO - Thread-2 - The command was received
+2019-09-05 23:49:43,627 - Server.Server.add - INFO - Thread-2 - Ready to load an img
+2019-09-05 23:49:46,639 - Server.Server.add - INFO - Thread-2 - that"s works!
+2019-09-05 23:49:46,639 - Server.Server.add - INFO - Thread-2 - leaving from infinite loop
+2019-09-05 23:49:46,639 - Server.Server.add - INFO - Thread-2 - The program obtained all the data :25796 bytes
+2019-09-05 23:49:46,639 - Server.Server.add - INFO - Thread-2 - The program saved data to :2019:9:5:23:44_('192.168.1.107', 42934)43.png
+2019-09-05 23:49:46,639 - Server.Server.add - INFO - Thread-2 - The image was saved
+2019-09-05 23:49:48,642 - Server.Server.add - INFO - Thread-2 - Making a prediction
+2019-09-05 23:49:50,534 - Server.Server.add - INFO - Thread-2 - Saving the img locally
+2019-09-05 23:49:51,326 - Server.Server.add - INFO - Thread-2 - The prediction for /home/hikkav/PycharmProjects/ServerWithNN/:2019:9:5:23:44_('192.168.1.107', 42934)43.png :Neutral
+2019-09-05 23:49:51,329 - Server.Server.add - INFO - Thread-2 - Sending prediction to client
+2019-09-05 23:49:51,329 - Server.Server.add - INFO - Thread-2 - Quitting 
+2019-09-05 23:49:51,329 - Server.Server.add - INFO - Thread-2 - The client 192.168.1.107:42934  has left the server 
+2019-09-05 23:49:51,329 - Server.Server.add - INFO - Thread-2 - Deleting the client from the list of clients
+2019-09-06 09:42:53,573 - Server - INFO - MainThread - The program started
+2019-09-06 09:42:53,573 - Server - INFO - MainThread - Waiting for connection
+2019-09-06 09:44:33,869 - Server - INFO - MainThread - The program started
+2019-09-06 09:44:33,870 - Server - INFO - MainThread - Waiting for connection
+2019-09-06 09:55:29,111 - Server - INFO - MainThread - The program started
+2019-09-06 09:55:29,111 - Server - INFO - MainThread - Waiting for connection
+2019-09-06 09:56:24,902 - Server - INFO - MainThread - The program started
+2019-09-06 09:56:24,902 - Server - INFO - MainThread - Waiting for connection
